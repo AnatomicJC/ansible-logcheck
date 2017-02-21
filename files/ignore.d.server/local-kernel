@@ -1,0 +1,17 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? Redirect from [.[:digit:]]* on [[:alnum:]]* about [.[:digit:]]* ignored.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])?   Advised path = [.[:digit:]]* -> [.[:digit:]]*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? 3w-9xxx: scsi.*: ERROR: \(0x03:0x0101\): Invalid command opcode:opcode=0x85.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? CPU
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? input: Bluetooth Keyboard as
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? generic-bluetooth
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? input: Bluetooth Keyboard as
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? generic-bluetooth
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? net_ratelimit: [[:digit:]]* callbacks suppressed$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: \[[.0-9]+\] kvm: zapping shadow pages for mmio generation wraparound$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: \[[.0-9]+\] device [[:alnum:]]* (entered|left) promiscuous mode$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: \[[.0-9]+\] vmbr[[:digit:]]: topology change detected, propagating$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: \[[.0-9]+\] vmbr[[:digit:]]: port .* entered forwarding state$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: \[[.0-9]+\] sh \([[:digit:]]*\): drop_caches
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? docker0: .+ entered [[:alpha:]]+ state$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? (usb|input|hid-generic)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? \[[[:space:]]*[[:digit:]]+\]  1000

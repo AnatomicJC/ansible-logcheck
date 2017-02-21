@@ -1,0 +1,2 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ gitlab.+\[[[:digit:]]+\]: .+ level=info
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (gitlab-runner|gitlab-ci-multi-runner)\[[[:digit:]]+\]: .*Checking for builds

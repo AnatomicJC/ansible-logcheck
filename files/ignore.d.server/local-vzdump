@@ -1,0 +1,3 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[[:digit:]]+\]: INFO:
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[[:digit:]]+\]: <root@pam> end task UPID.+OK$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[[:digit:]]+\]: <root@pam> starting task UPID

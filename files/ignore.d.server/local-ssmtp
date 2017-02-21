@@ -1,0 +1,6 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sSMTP\[[0-9]+\]: Creating SSL connection to host
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sSMTP\[[0-9]+\]: SSL connection using (RSA_ARCFOUR_SHA1|RSA_AES_128_CBC_SHA1)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sSMTP\[[0-9]+\]: Sent mail for [[:alpha:]]*\@[._[:alpha:]]* \(221 2.0.0 closing connection .+gsmtp\) uid=[[:digit:]]* username=[[:alpha:]]* outbytes=[[:digit:]]*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ .*[[0-9]+\]: \(logcheck\) MAIL
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sSMTP[[0-9]+\]: Unable to connect to "smtp.gmail.com" port 587.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sSMTP[[0-9]+\]: Cannot open smtp.gmail.com:587$

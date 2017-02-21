@@ -1,0 +1,28 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvestatd\[[[:digit:]]+\]: status update time
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvedailycron\[[[:digit:]]+\]: cleanup removed [[:digit:]]+ task logs$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pve|spice)proxy\[[[:digit:]]+\]: send HUP to [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pve|spice)proxy\[[[:digit:]]+\]: received signal (HUP|TERM)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pve|spice)proxy\[[[:digit:]]+\]: starting [[:digit:]]* worker\(s\)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pve|spice)proxy\[[[:digit:]]+\]: server (stopped|closing)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pve|spice)proxy\[[[:digit:]]+\]: starting server$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pve|spice)proxy\[[[:digit:]]+\]: server shutdown \(restart\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pve|spice)proxy\[[[:digit:]]+\]: worker exit$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvepw-logger\[[[:digit:]]+\]: received terminate request \(signal\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvepw-logger\[[[:digit:]]+\]: (stopping|starting) pvefw logger$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pve|spice)proxy\[[[:digit:]]+\]: restarting server$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pve|spice)proxy\[[[:digit:]]+\]: worker [[:digit:]]+ (started|finished)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pmxcfs\[[[:digit:]]+\]: \[dcdb\] notice: data verification successful$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cgmanager\[[[:digit:]]+\]: cgmanager: could not open cgroup file
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cgmanager\[[[:digit:]]+\]: cgmanager: Found no cgroup entry for pid
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvedaemon\[[[:digit:]]+\]: .* successful auth for user
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ collectd\[[[:digit:]]+\]: (Stopping|Starting) statistics collection and monitoring daemon: collectd.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pmxcfs\[[[:digit:]]+\]: \[status\] notice: received log$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvedaemon\[[[:digit:]]+\]: worker [[:digit:]]+ (started|finished)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvedaemon\[[[:digit:]]+\]: starting [[:digit:]]+ worker
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvedaemon\[[[:digit:]]+\]: worker exit$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pveproxy\[[[:digit:]]+\]: Clearing outdated entries from certificate cache$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pveproxy\[[[:digit:]]+\]: kill worker [[:digit:]]+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pveproxy\[[[:digit:]]+\]: error stopping workers
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pve|spice)proxy\[[[:digit:]]+\]: got inotify poll request in wrong process - disabling inotify$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvedaemon\[[[:digit:]]+\]: .* starting task
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvedaemon\[[[:digit:]]+\]: starting vnc proxy

@@ -1,0 +1,9 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ collectd( \[ *[[:digit:]]+\]:)?.+parse_value: Failed to parse string as gauge: \(null\)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ collectd\[[[:digit:]]+\]: Exiting normally.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ collectd\[[[:digit:]]+\]: collectd: Stopping [[:digit:]] read threads.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ collectd\[[[:digit:]]+\]: rrdtool plugin: Shutting down the queue thread.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ collectd\[[[:digit:]]+\]: Initialization complete, entering read-loop.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ collectd\[[[:digit:]]+\]: rrdtool plugin: Adjusting "RandomTimeout" to [.[:digit:]]+ seconds.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ collectd\[[[:digit:]]+\]: exec plugin: Sent SIGTERM to
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ collectdmon\[[[:digit:]]+\]: Info: collectd terminated with exit status 0
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ collectdmon\[[[:digit:]]+\]: Info: shutting down collectdmon$
