@@ -1,1 +1,2 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ slapd\[[[:digit:]]+\]: <= bdb_equality_candidates: \(uid\) not indexed$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ slapcat: DIGEST-MD5 common mech free$
