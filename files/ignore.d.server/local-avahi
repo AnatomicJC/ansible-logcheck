@@ -3,3 +3,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ avahi-daemon\[[[:digit:]]+\]: Withdrawing address record for
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ avahi-daemon\[[[:digit:]]+\]: Received response from host [.[:digit:]]* with invalid source port [[:digit:]]* on interface .*$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ avahi-daemon\[[[:digit:]]+\]: (Leaving|Joining) mDNS multicast group
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ avahi-daemon\[[[:digit:]]+\]: Withdrawing workstation service for
