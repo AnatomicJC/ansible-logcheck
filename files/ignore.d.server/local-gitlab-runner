@@ -3,3 +3,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (gitlab-runner|gitlab-ci-multi-runner)\[[[:digit:]]+\]: .*Checking for jobs... forbidden
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (gitlab-runner|gitlab-ci-multi-runner)\[[[:digit:]]+\]: .*is not healthy, but will be checked
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (gitlab-runner|gitlab-ci-multi-runner)\[[[:digit:]]+\]: .*is not healthy and will be disabled
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (gitlab-runner|gitlab-ci-multi-runner)\[[[:digit:]]+\]: .*Appending trace to coordinator... failed
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (gitlab-runner|gitlab-ci-multi-runner)\[[[:digit:]]+\]: .*connection reset by peer
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (gitlab-runner|gitlab-ci-multi-runner)\[[[:digit:]]+\]: .*Checking for jobs... failed
