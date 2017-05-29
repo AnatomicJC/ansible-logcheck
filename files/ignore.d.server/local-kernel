@@ -25,3 +25,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? EXT4-fs .* mounted filesystem without journal. Opts: noload$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? \[[[:digit:]]*\]: VMCI: Updating context
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? 3w-9xxx: scsi[[:digit:]]: AEN: (INFO|WARNING).*Battery temperature is
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ip_tunnel: non-ECT from [.[:digit:]]* with TOS=0x2$
