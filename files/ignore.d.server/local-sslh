@@ -1,1 +1,2 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sslh\[[[:digit:]]+\]: connection from .* to .* forwarded from .* to
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sslh\[[[:digit:]]+\]: sprintaddr:getnameinfo: Temporary failure in name resolution$
