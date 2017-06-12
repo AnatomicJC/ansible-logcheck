@@ -1,2 +1,3 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sudo: backuppc : TTY=unknown ; PWD=/home/backuppc ; USER=root ; COMMAND=/var/opt/backup_clean$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sudo: backuppc : TTY=unknown ; PWD=/home/backuppc ; USER=root ; COMMAND=/var/opt/backup_mysql$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sudo:  sqlprod : TTY=unknown ; PWD=/home/sqlprod ; USER=root ; COMMAND=/var/opt/restore.sh$
