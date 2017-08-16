@@ -4,7 +4,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Disconnected(|: Inactivity) \(no auth attempts in .+ secs\): user=(<[-_.@[:alnum:]]+>|<>), rip=[.[:digit:]]+, lip=[.[:digit:]]+, (TLS|SSL)(| handshaking)(|: Disconnected|: SSL_read\(\) syscall failed: Connection reset by peer), session=<.+>$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap-login: Disconnected \(no auth attempts
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ auth: pam_unix\(dovecot:auth\): check pass; user unknown$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ auth: pam_unix\(dovecot:auth\): authentication failure; logname= uid=[[:digit:]]* euid=[[:digit:]]* tty=dovecot ruser=[-.@[:alnum:]]+ rhost=[\.+[:digit:]]*
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ auth: pam_unix\(dovecot:auth\): authentication failure; logname= uid=[[:digit:]]* euid=[[:digit:]]* tty=dovecot ruser=[-.@_[:alnum:]]+ rhost=[\.+[:digit:]]*
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Aborted login
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Disconnected
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth: Warning: auth client .* disconnected with .* pending requests: EOF$
