@@ -29,3 +29,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pve|spice)proxy\[[[:digit:]]+\]: server still running - send KILL$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pve|spice)proxy\[[[:digit:]]+\]: error stopping workers
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pve|spice)proxy\[[[:digit:]]+\]: kill worker
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pve-firewall\[[[:digit:]]+\]: firewall update time

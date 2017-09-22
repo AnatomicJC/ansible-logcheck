@@ -27,3 +27,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? 3w-9xxx: scsi[[:digit:]]: AEN: (INFO|WARNING).*Battery temperature is
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ip_tunnel: non-ECT from [.[:digit:]]* with TOS=0x2$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? 3w-9xxx: scsi0: AEN: INFO .*Verify
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? (sd|Write)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? EXT4-fs \(dm-[[:digit:]]+\): error count since last fsck:
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? EXT4-fs \(dm-[[:digit:]]+\): initial error at time
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? EXT4-fs \(dm-[[:digit:]]+\): last error at time
