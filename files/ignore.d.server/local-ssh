@@ -24,3 +24,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Invalid user .* from ([0-9]{1,3}\.){3}[0-9]{1,3}
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: input_userauth_request: invalid user
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: channel_setup_fwd_listener_tcpip: cannot listen to port:
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: rexec line 22: Deprecated option RSAAuthentication
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: rexec line 30: Deprecated option RhostsRSAAuthentication
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Unable to negotiate with ([0-9]{1,3}\.){3}[0-9]{1,3} port [[:digit:]]*: no matching key exchange method found.
