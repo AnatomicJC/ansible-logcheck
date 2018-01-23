@@ -30,3 +30,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pve|spice)proxy\[[[:digit:]]+\]: error stopping workers
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pve|spice)proxy\[[[:digit:]]+\]: kill worker
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pve-firewall\[[[:digit:]]+\]: firewall update time
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pveupdate\[[[:digit:]]+\]:.* (starting|end) task
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pveupdate\[[[:digit:]]+\]: update new package list: /var/lib/pve-manager/pkgupdates$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvefw-logger\[[[:digit:]]+\]: (stopping|starting) pvefw logger$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvefw-logger\[[[:digit:]]+\]: received terminate request \(signal\)$

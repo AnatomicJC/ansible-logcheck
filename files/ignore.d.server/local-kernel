@@ -31,3 +31,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? EXT4-fs \(dm-[[:digit:]]+\): error count since last fsck:
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? EXT4-fs \(dm-[[:digit:]]+\): initial error at time
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? EXT4-fs \(dm-[[:digit:]]+\): last error at time
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? 3w-sas: scsi0: AEN: INFO .* Battery charging (started|completed):.
