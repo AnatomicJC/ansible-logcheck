@@ -1,0 +1,2 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mailhog\[[[:digit:]]+\]: \[APIv1\] KEEPALIVE \/api\/v1\/events$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mailhog\[[[:digit:]]+\]:

@@ -1,0 +1,24 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd\[[[:digit:]]+\]: .*: No data available
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd\[[[:digit:]]+\]: nss_ldap: reconnect(ing|ed) to LDAP server
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd\[[[:digit:]]+\]: afp_zzz: entering extended sleep$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd\[[[:digit:]]+\]: AFP(3.3)? (logout|Login|statistics)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd\[[[:digit:]]+\]: afp_disconnect: trying primary reconnect$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd\[[[:digit:]]+\]: Reconnect: no child\[[[:digit:]]*\]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd\[[[:digit:]]+\]: afp_disconnect: primary reconnect failed$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd\[[[:digit:]]+\]: volume .* does not support Extended Attributes, using ea:ad instead$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd\[[[:digit:]]+\]: afp_alarm: sleep time ended$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd\[[[:digit:]]+\]: afp_zzz: waking up from extended sleep$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd\[[[:digit:]]+\]: afp_alarm: child timed out, entering disconnected state$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd\[[[:digit:]]+\]: dsi_disconnect: entering disconnected state$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd\[[[:digit:]]+\]: afp_over_dsi: failed reconnect$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd\[[[:digit:]]+\]: Reconnect: transfering session to child\[[[:digit:]]*\]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd\[[[:digit:]]+\]: Reconnect: killing new session child\[[[:digit:]]*\] after transfer$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd\[[[:digit:]]+\]: afp_disconnect: primary reconnect succeeded$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd\[[[:digit:]]+\]: afp_dsi_transfer_session: succesfull primary reconnect$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd\[[[:digit:]]+\]: pam_unix\(netatalk:auth\): authentication failure;
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd\[[[:digit:]]+\]:.*Connection reset by peer
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd\[[[:digit:]]+\]: deletecurdir: error deleting .AppleDouble
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd\[[[:digit:]]+\]: dsi_stream_read: len:[[:digit:]]*, unexpected EOF
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd\[[[:digit:]]+\]: AFP Replay Cache match: id: [[:digit:]]* / cmd: AFP_GETEXTATTR
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd\[[[:digit:]]+\]: afp_alarm: reconnect timer expired, goodbye$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd\[[[:digit:]]+\]: Disconnected session terminating$

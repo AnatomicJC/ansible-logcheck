@@ -1,0 +1,25 @@
+---
+- name: Install logcheck
+  apt:
+    name: "{{ item }}"
+    state: "latest"
+  with_items:
+    - logcheck
+    - rsync
+
+- name: Copy logcheck configuration files
+  synchronize:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  with_items:
+    - { src: 'files/ignore.d.server/', dest: '/etc/logcheck/ignore.d.server/' }
+    - { src: 'files/violations.ignore.d/', dest: '/etc/logcheck/violations.ignore.d/' }
+  tags: logcheck-copy-custom-rules
+
+- name: Configure crontab
+  template:
+    src: "etc/cron.d/logcheck.j2"
+    dest: "/etc/cron.d/logcheck"
+    owner: "root"
+    group: "root"
+    mode: "0644"

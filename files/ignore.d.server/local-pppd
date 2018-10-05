@@ -1,0 +1,7 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pppd\[[[:digit:]]+\]: Connection terminated\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pppd\[[[:digit:]]+\]: Exit\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pppd\[[[:digit:]]+\]: pppd .* started by
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pppd\[[[:digit:]]+\]: (local|remote)[[:space:]]*IP address
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pppd\[[[:digit:]]+\]: (primary|secondary)[[:space:]]*DNS address
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pppd\[[[:digit:]]+\]: No response to [[:digit:]]* echo-requests$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pppd\[[[:digit:]]+\]: Serial link appears to be disconnected\.$

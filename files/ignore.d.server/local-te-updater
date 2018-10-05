@@ -1,0 +1,3 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ te-updater[[[:digit:]]+\]: .*(\(\(.\)\)#015)+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ te-updater[[[:digit:]]+\]: .*#033\[37m#033\[1;37mINFO#033\[0m
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ te-updater[[[:digit:]]+\]: retrieving source files from [.[:digit:]]* repository\.$

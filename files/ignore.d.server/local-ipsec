@@ -1,0 +1,32 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[(IKE|ENC)\] CHILD_SA not found, ignored$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[(IKE|ENC)\] (IKE|CHILD)_SA .* established
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[(IKE|ENC)\] .* is initiating a Main Mode IKE_SA
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[(IKE|ENC)\] deleting IKE_SA
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[(IKE|ENC)\] IKE_SA .* established
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[(IKE|ENC)\] (parsed|received|sending|selected)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[(IKE|ENC)\] local host is behind NAT, sending keep alives$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[(IKE|ENC)\] generating ID_PROT response
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[(IKE|ENC)\] scheduling reauthentication
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[(IKE|ENC)\] maximum IKE_SA lifetime
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[CFG\] looking for pre-shared key peer configs matching
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[(NET|CFG)\] (received|sending|loading|expanding)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[ENC\] generating
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[CFG\] selected peer config
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[KNL\] creating rekey job for CHILD_SA
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[IKE\] closing CHILD_SA
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[IKE\] detected rekeying of CHILD_SA
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec\[[[:digit:]]*\]): [[:digit:]]{2}\[(IKE|ENC)\] destroying duplicate IKE_SA for peer '.*', received INITIAL_CONTACT$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ ipsec_starter[[[:digit:]]*]: (charon|ipsec starter) stopped
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ ipsec_starter[[[:digit:]]*]: Starting
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ ipsec_starter[[[:digit:]]*]: charon .* started
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[(NET|CFG)\] no IKE_SA named '.*' found$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[DMN\] signal of type SIGINT received. Shutting down$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[DMN\] Starting
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[IKE\] initiating Main Mode IKE_SA
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[CFG\] added configuration
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[CFG\]   loaded IKE secret for
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[JOB\] spawning [[:digit:]]{2} worker threads$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[LIB\] dropped capabilities
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec[[[:digit:]]*]): [[:digit:]]{2}\[LIB\] loaded plugins
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ ipsec\[[[:digit:]]+\]: charon stopped
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ ipsec\[[[:digit:]]+\]: ipsec starter stopped$

@@ -1,0 +1,2 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sh\[[[:digit:]]+\]: GUI: Scanning
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ 50-motd-news\[[[:digit:]]+\]:
