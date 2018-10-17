@@ -5,15 +5,47 @@
     state: "latest"
   with_items:
     - logcheck
-    - rsync
+
+- name: Create local archive of logcheck configuration files
+  archive:
+    path: "{{ item.path }}"
+    dest: "{{ item.dest }}"
+    format: gz
+  with_items:
+    - path: "{{ role_path }}/files/ignore.d.server/"
+      dest: "{{ role_path }}/ignore.tar.gz"
+    - path: "{{ role_path }}/files/violations.ignore.d/"
+      dest: "{{ role_path }}/violations.tar.gz"
+  delegate_to: localhost
+  run_once: True
+  vars:
+    ansible_become: False
+  changed_when: false
+  tags: logcheck-copy-custom-rules
 
 - name: Copy logcheck configuration files
-  synchronize:
+  unarchive:
     src: "{{ item.src }}"
     dest: "{{ item.dest }}"
   with_items:
-    - { src: 'files/ignore.d.server/', dest: '/etc/logcheck/ignore.d.server/' }
-    - { src: 'files/violations.ignore.d/', dest: '/etc/logcheck/violations.ignore.d/' }
+    - src: "{{ role_path }}/ignore.tar.gz"
+      dest: "/etc/logcheck/ignore.d.server/"
+    - src: "{{ role_path }}/violations.tar.gz"
+      dest: "/etc/logcheck/violations.ignore.d/"
+  tags: logcheck-copy-custom-rules
+
+- name: Remove local archive of logcheck configuration files
+  file:
+    state: absent
+    path: "{{ role_path }}/{{ item }}"
+  with_items:
+      - "ignore.tar.gz"
+      - "violations.tar.gz"
+  delegate_to: localhost
+  run_once: True
+  vars:
+    ansible_become: False
+  changed_when: false
   tags: logcheck-copy-custom-rules
 
 - name: Configure crontab
