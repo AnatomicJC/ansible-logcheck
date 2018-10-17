@@ -22,4 +22,3 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-udevd\[[[:digit:]]+\]: link_config: could not get ethtool features for
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-udevd\[[[:digit:]]+\]: Could not set offload features of .*: Operation not supported$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: .*.service: Service hold-off time over, scheduling restart.$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ su\[[[:digit:]]+\]: pam_systemd\(su:session\): Cannot create session: Already running in a session$
