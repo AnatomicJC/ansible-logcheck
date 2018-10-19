@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ CRON\[[[:digit:]]+\]: pam_unix\(cron:session\): session (opened|closed)
