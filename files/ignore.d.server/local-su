@@ -1,0 +1,3 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ su\[[[:digit:]]+\]: pam_unix\(su:session\): session (opened|closed) for user
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ su\[[[:digit:]]+\]: Successful su for
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ su\[[[:digit:]]+\]: \+ /dev/pts/[[:digit:]]
