@@ -6,3 +6,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: disconnect from
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/master\[[[:digit:]]+\]: reload
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/postfix-script\[[[:digit:]]+\]: refreshing the Postfix mail system$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: 
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/qmgr\[[[:digit:]]+\]: [[:alnum:]]*: removed$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/.*\[[[:digit:]]+\]: .*logcheck
