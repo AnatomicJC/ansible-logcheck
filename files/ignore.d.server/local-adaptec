@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Adaptec Event Monitor: \[[[:digit:]]*\] :INF: Drive map: controller [[:digit:]], channel [[:digit:]], SCSI device ID [[:digit:]], controller [[:digit:]] \( Adaptec .* Physical Slot: [[:digit:]] \)
