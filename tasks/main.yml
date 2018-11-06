@@ -1,10 +1,8 @@
 ---
 - name: Install logcheck
   apt:
-    name: "{{ item }}"
+    name: "logcheck"
     state: "latest"
-  with_items:
-    - logcheck
 
 - name: Create local archive of logcheck configuration files
   archive:
