@@ -1,0 +1,5 @@
+---
+# Rules will be added in /etc/logcheck/ignore.d.server/local-local
+logcheck_server_local_rules: ""
+# Rules will be added in /etc/logcheck/violations.ignore.d/local-local
+logcheck_violation_local_rules: ""

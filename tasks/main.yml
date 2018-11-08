@@ -46,6 +46,17 @@
   changed_when: false
   tags: logcheck-copy-custom-rules
 
+- name: Copy host local rules
+  copy:
+    dest: "{{ item.dest }}"
+    content: "{{ item.content }}"
+  with_items:
+    - content: "{{ logcheck_server_local_rules }}"
+      dest: "/etc/logcheck/ignore.d.server/local-local"
+    - content: "{{ logcheck_violation_local_rules }}"
+      dest: "/etc/logcheck/violations.ignore.d/local-local"
+  tags: logcheck-copy-custom-rules
+
 - name: Configure crontab
   template:
     src: "etc/cron.d/logcheck.j2"
