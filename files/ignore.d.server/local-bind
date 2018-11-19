@@ -4,3 +4,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: validating .* got insecure response; parent indicates it should be secure$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: error \(insecurity proof failed\) resolving
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: client .*: message parsing failed: unexpected end of input$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: error \(no valid RRSIG\) resolving
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]:   validating .* SOA: got insecure response; parent indicates it should be secure$

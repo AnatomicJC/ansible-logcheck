@@ -4,3 +4,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: .*, SMART Usage Attribute: 194 Temperature_Celsius changed from [[:digit:]]* to [[:digit:]]*$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: .*, offline data collection was suspended by an interrupting command from host
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: .*, offline data collection was completed without error
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: .* SMART Usage Attribute: 191 G-Sense_Error_Rate changed from [[:digit:]]* to [[:digit:]]*$
