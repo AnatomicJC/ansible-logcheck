@@ -33,3 +33,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? EXT4-fs \(dm-[[:digit:]]+\): last error at time
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? 3w-sas: scsi0: AEN: INFO .* Battery charging (started|completed):.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? perf: interrupt took too long \([[:digit:]]* > [[:digit:]]*\), lowering kernel.perf_event_max_sample_rate to [[:digit:]]*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[[:digit:]\.]*\] .* entered (blocking|forwarding|disabled) state$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[[:digit:]\.]*\] .* link (is not|becomes) ready$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[[:digit:]\.]*\] .* renamed from
