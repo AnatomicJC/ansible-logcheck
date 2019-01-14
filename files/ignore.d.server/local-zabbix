@@ -1,2 +1,3 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ zabbix_agentd\[[[:digit:]]+\]: Press Ctrl\+C to exit\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ zabbix_agentd\[[[:digit:]]+\]: Starting Zabbix Agent
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ zabbix-agent\[[[:digit:]\.]*\]: zabbix_agentd (start|stopp)ing...done.$
