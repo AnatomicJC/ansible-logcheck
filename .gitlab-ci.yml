@@ -1,0 +1,3 @@
+include:
+  - project: 'SysAdmin/gitlab-ci-templates'
+    file: '/rebuild-ansible-docker-image.yml'
