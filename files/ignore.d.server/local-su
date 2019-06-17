@@ -2,3 +2,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ su\[[[:digit:]]+\]: Successful su for
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ su\[[[:digit:]]+\]: \+ /dev/pts/[[:digit:]]
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ su(\[[[:digit:]]+\])?: \(to [[:alnum:]]*\) [[:alnum:]]* on pts/[[:digit:]]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ su(\[[[:digit:]]+\])?: pam_unix\(su-l:session\): session closed for user

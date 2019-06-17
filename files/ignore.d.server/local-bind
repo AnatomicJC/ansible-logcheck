@@ -7,3 +7,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: error \(no valid RRSIG\) resolving
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]:   validating .* SOA: got insecure response; parent indicates it should be secure$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: managed-keys-zone: Active key unexpectedly missing from \.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: managed-keys-zone: Unable to fetch DNSKEY set '.': timed out$
