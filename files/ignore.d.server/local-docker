@@ -2,3 +2,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dockerd\[[[:digit:]]+\]: time="[-:\.[:alnum:]]*" level=warning msg="Your kernel does not support swap limit capabilities,or the cgroup is not mounted. Memory limited without swap."$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dockerd\[[[:digit:]]+\]: time="[-:\.[:alnum:]]*" level=error msg="stream copy error: reading from a closed fifo"$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dockerd\[[[:digit:]]+\]: time="[-:\.[:alnum:]]*" level=error msg="[[:alnum:]]* cleanup: failed to delete container from containerd: no such container"$
+cleanup: failed to unmount IPC
