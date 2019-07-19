@@ -3,3 +3,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dockerd\[[[:digit:]]+\]: time="[-:\.[:alnum:]]*" level=error msg="stream copy error: reading from a closed fifo"$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dockerd\[[[:digit:]]+\]: time="[-:\.[:alnum:]]*" level=error msg="[[:alnum:]]* cleanup: failed to delete container from containerd: no such container"$
 cleanup: failed to unmount IPC
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dockerd\[[[:digit:]]+\]: time="[-:\.[:alnum:]]*" level=error msg="Can.t add file.*sockets not supported"$
