@@ -2,7 +2,7 @@
 - name: Install logcheck
   apt:
     name: "logcheck"
-    state: "latest"
+    state: "present"
 
 - name: Create local archive of logcheck configuration files
   archive:
@@ -35,7 +35,7 @@
 - name: Remove local archive of logcheck configuration files
   file:
     state: absent
-    path: "{{ role_path }}/{{ item }}"
+    path: "{{ role_path }}/{{ item }}"
   with_items:
       - "ignore.tar.gz"
       - "violations.tar.gz"
