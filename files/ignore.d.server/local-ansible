@@ -1,1 +1,2 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ ansible
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ python3\[[[:digit:]]+\]: ansible-ping Invoked with data=pong$
