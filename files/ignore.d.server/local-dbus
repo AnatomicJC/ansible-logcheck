@@ -1,2 +1,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus\[[[:digit:]]+\]: \[system\] Activating service name='.*' \(using servicehelper\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus\[[[:digit:]]+\]: \[system\] Successfully activated service '.*'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus(-daemon)?\[[[:digit:]]+\]: \[system\] Activating via systemd
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus(-daemon)?\[[[:digit:]]+\]: \[system\] Successfully activated service
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ PackageKit: daemon start$
