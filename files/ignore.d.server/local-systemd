@@ -35,3 +35,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-tmpfiles\[[[:digit:]]+\]:.* Line references path below legacy directory .* please update the tmpfiles.d/ drop-in file accordingly.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: libcontainer-[[:digit:]]*.*Scope has no PIDs
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: docker-[[:alnum:]]*.scope: Consumed
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: packagekit.service: Main process exited, code=killed, status=15/TERM$
