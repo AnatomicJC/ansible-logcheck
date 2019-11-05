@@ -39,4 +39,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Configuration file /(etc|lib)/systemd/system/kubelet.* is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-udevd\[[[:digit:]\.]*\]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-udevd\[[[:digit:]\.]*\]: Using default interface naming scheme 'v240'.$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]\.]*\]: kubepods-besteffort-pod[_[:alnum:]]*.slice: Consumed [[:digit:]]*ms CPU time.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]\.]*\]: kubepods-besteffort-pod[_[:alnum:]]*.slice: Consumed .* CPU time.$
