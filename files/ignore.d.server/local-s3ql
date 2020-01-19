@@ -1,0 +1,13 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mount.s3ql\[[.[:digit:]]+\]: Dumping metadata...$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mount.s3ql\[[.[:digit:]]+\]: ..objects..
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mount.s3ql\[[.[:digit:]]+\]: ..blocks..
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mount.s3ql\[[.[:digit:]]+\]: ..inodes..
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mount.s3ql\[[.[:digit:]]+\]: ..inode_blocks..
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mount.s3ql\[[.[:digit:]]+\]: ..symlink_targets..
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mount.s3ql\[[.[:digit:]]+\]: ..names..
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mount.s3ql\[[.[:digit:]]+\]: ..contents..
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mount.s3ql\[[.[:digit:]]+\]: ..ext_attributes..
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mount.s3ql\[[.[:digit:]]+\]: Compressing and uploading metadata...
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mount.s3ql\[[.[:digit:]]+\]: Wrote .* of compressed metadata.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mount.s3ql\[[.[:digit:]]+\]: Cycling metadata backups...
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mount.s3ql\[[.[:digit:]]+\]: Backing up old metadata...
