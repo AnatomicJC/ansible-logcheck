@@ -1,0 +1,3 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ networkd-dispatcher\[[[:digit:]]+\]: ERROR:Unknown interface index [[:digit:]]* seen even after reload
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ networkd-dispatcher\[[[:digit:]]+\]: WARNING:Unknown index [[:digit:]]* seen, reloading interface list
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-networkd\[[[:digit:]]+\]: Could not add new link, ignoring: No such device

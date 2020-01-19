@@ -40,3 +40,10 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-udevd\[[[:digit:]\.]*\]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-udevd\[[[:digit:]\.]*\]: Using default interface naming scheme 'v240'.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]\.]*\]: kubepods-besteffort-pod[_[:alnum:]]*.slice: Consumed .* CPU time.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: user@[[:digit:]]*\.service: Killing process [[:digit:]]* \(kill\) with signal SIGKILL.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Closed Docker Socket for the API.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-networkd\[[[:digit:]]+\]: [-[:alnum:]]*: (Lost|Gained) (carrier|IPv6LL)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-networkd\[[[:digit:]]+\]: [-[:alnum:]]*: Could not find udev device: No such device
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-networkd\[[[:digit:]]+\]: [-[:alnum:]]*: Failed
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-networkd\[[[:digit:]]+\]: [-[:alnum:]]*: Could not add new link, ignoring: No such device
+

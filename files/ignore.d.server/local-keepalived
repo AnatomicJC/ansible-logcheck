@@ -1,0 +1,3 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Keepalived_vrrp\[[[:digit:]\.]*\]: VRRP_Instance\(haproxy-vip\) Dropping received VRRP packet...
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Keepalived_vrrp\[[[:digit:]\.]*\]: bogus VRRP packet received on
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Keepalived_vrrp\[[[:digit:]\.]*\]: \(haproxy-vip\): ip address associated with VRID .* not present in MASTER advert

@@ -1,0 +1,2 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dnsmasq\[[[:digit:]]+\]: (query|cached|auth|config|forwarded|reply)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dnsmasq\[[[:digit:]]+\]: message repeated [[:digit:]]{1,2} times

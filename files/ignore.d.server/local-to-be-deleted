@@ -1,1 +1,2 @@
 ^\w{3} [ :[:digit:]]{11} sparrow smartd\[[[:digit:]]+\]:
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ alertmanager\[[[:digit:]]+\]: .*slack

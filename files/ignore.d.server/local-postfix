@@ -9,3 +9,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: 
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/qmgr\[[[:digit:]]+\]: [[:alnum:]]*: removed$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/.*\[[[:digit:]]+\]: .*logcheck
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: [[:alnum:]]*: replace: header From:

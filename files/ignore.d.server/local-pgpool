@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pgpool\[[[:digit:]]+\]: [-:[:digit:]]{10}[[:space:]][:[:digit:]]{9}[[:space:]]pid [[:digit:]]*: (LOG|DETAIL):

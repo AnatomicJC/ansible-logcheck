@@ -1,0 +1,4 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dmeventd\[[[:digit:]]+\]: dmeventd was idle
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dmeventd\[[[:digit:]]+\]: dmeventd shutting down.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dmeventd\[[[:digit:]]+\]: dmeventd ready for processing.$
+\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dmeventd\[[[:digit:]]+\]: No longer monitoring snapshot 

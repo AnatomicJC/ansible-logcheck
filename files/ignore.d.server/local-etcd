@@ -1,0 +1,3 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ etcd\[[[:digit:]\.]*\]: [-[:digit:]]{10}[[:space:]][:.[:digit:]]{15}[[:space:]]I
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ etcd\[[[:digit:]\.]*\]: [-[:digit:]]{10}[[:space:]][:.[:digit:]]{15} N \| compactor: (Starting|Finished) auto-compaction at revision
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ etcd\[[[:digit:]\.]*\]: [-[:digit:]]{10}[[:space:]][:.[:digit:]]{15} W | etcdserver: .* took too long \([[:digit:]]{3}\.[[:digit:]]*ms\) to execute
