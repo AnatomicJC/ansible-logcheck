@@ -1,4 +1,7 @@
 ---
+logcheck_enabled: False
+logcheck_cron_expression: 2 * * * *
+
 # Rules will be added in /etc/logcheck/ignore.d.server/local-local
 logcheck_server_local_rules: ""
 # Rules will be added in /etc/logcheck/violations.ignore.d/local-local
