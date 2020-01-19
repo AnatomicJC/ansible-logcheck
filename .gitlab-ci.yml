@@ -1,5 +1,3 @@
 include:
-  - project: 'SysAdmin/gitlab-ci-templates'
+  - project: 'AnatomicJC/gitlab-ci-templates'
     file: '/ansible-role-linter.yml'
-  - project: 'SysAdmin/gitlab-ci-templates'
-    file: '/rebuild-ansible-docker-image.yml'
