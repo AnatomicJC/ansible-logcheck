@@ -1,7 +1,6 @@
 galaxy_info:
   description: Logcheck Configuration
-  author:
-  - Jean Christophe Vassort
+  author: Jean Christophe Vassort
   license: GPLv3
   min_ansible_version: 2.0
   platforms:
