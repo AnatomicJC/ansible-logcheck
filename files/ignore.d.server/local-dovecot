@@ -8,3 +8,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Aborted login
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Disconnected
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth: Warning: auth client .* disconnected with .* pending requests: EOF$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([[:alnum:]]*\)<[[:digit:]]*>.*: Connection closed
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([[:alnum:]]*\)<[[:digit:]]*><[[:alnum:]/?]*>: Connection closed
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([[:alnum:]]*\)<[[:digit:]]*><[[:alnum:]/?]*>: Logged out
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([[:alnum:]]*\)<[[:digit:]]*><[[:alnum:]/?]*>: Disconnected for inactivity
