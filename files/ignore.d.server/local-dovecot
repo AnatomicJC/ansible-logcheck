@@ -11,4 +11,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([[:alnum:]]*\)<[[:digit:]]*>.*: Connection closed
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([[:alnum:]]*\)<[[:digit:]]*><[[:alnum:]/?]*>: Connection closed
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([[:alnum:]]*\)<[[:digit:]]*><[[:alnum:]/?]*>: Logged out
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([[:alnum:]]*\)<[[:digit:]]*><[[:alnum:]/?]*>: Disconnected for inactivity
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([[:alnum:]]*\)<[[:digit:]]*><.*>: Disconnected for inactivity
