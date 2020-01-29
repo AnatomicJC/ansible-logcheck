@@ -1,0 +1,4 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ os-prober: debug: (running|os detected)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ .*: debug: .* is not a.* partition: exiting$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ .*: debug: .* skipping$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ 05efi: debug: Not on UEFI platform$
