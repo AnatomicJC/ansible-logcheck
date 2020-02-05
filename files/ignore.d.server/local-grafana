@@ -1,2 +1,4 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ grafana-server\[[[:digit:]]*\]:
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ grafana-server\[[[:digit:]]*\]: .*lvl=info
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ grafana-server\[[[:digit:]]*\]: [/[:digit:]]{10} [:[:digit:]]{8} http: proxy error: context canceled$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ grafana-server\[[[:digit:]]*\]: [/[:digit:]]{10} [:[:digit:]]{8} http: superfluous response.WriteHeader call from
