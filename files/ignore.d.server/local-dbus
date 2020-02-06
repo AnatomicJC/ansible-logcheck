@@ -3,3 +3,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus(-daemon)?\[[[:digit:]]+\]: \[system\] Activating via systemd
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus(-daemon)?\[[[:digit:]]+\]: \[system\] Successfully activated service
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ PackageKit: daemon (start|quit)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus(-daemon)?\[[[:digit:]]+\]: \[system\] Reloaded configuration$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus(-daemon)?\[[[:digit:]]+\]: Unknown group ".*" in message bus configuration file$

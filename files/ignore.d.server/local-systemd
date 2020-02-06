@@ -5,6 +5,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd: pam_unix\(systemd-user:session\): session (opened|closed)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-timesyncd\[[[:digit:]]+\]:
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Reloading
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Reexecuting
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Found device
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Listening on
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Mounted
@@ -46,4 +47,11 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-networkd\[[[:digit:]]+\]: [-[:alnum:]]*: Could not find udev device: No such device
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-networkd\[[[:digit:]]+\]: [-[:alnum:]]*: Failed
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-networkd\[[[:digit:]]+\]: [-[:alnum:]]*: Could not add new link, ignoring: No such device
-
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd[[[:digit:]]+\]: .* Unknown .value
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd[[[:digit:]]+\]: Configuration file .* is marked executable. Please remove executable permission bits. Proceeding anyway.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-networkd[[[:digit:]]+\]: Enumeration completed
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-networkd[[[:digit:]]+\]: .* Configured
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-networkd[[[:digit:]]+\]: .* Link is not managed by us
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-resolved[[[:digit:]]+\]: Using system hostname
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-resolved[[[:digit:]]+\]: .*rust .nchors
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-resolved[[[:digit:]]+\]: . IN
