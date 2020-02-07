@@ -55,3 +55,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-resolved[[[:digit:]]+\]: Using system hostname
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-resolved[[[:digit:]]+\]: .*rust .nchors
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-resolved[[[:digit:]]+\]: . IN
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-networkd-wait-online[[[:digit:]]+\]: (ignoring|managing)
