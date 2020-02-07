@@ -56,3 +56,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-resolved[[[:digit:]]+\]: .*rust .nchors
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-resolved[[[:digit:]]+\]: . IN
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-networkd-wait-online[[[:digit:]]+\]: (ignoring|managing)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-udevd\[[[:digit:]\.]*\]: Could not generate persistent MAC address for
