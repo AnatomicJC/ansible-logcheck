@@ -1,3 +1,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pgpool\[[[:digit:]]+\]: [-:[:digit:]]{10}[[:space:]][:[:digit:]]{9}[[:space:]]pid [[:digit:]]*: (LOG|DETAIL|CONTEXT):
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pgpool\[[[:digit:]]+\]: [-:[:digit:]]{10}[[:space:]][:[:digit:]]{9} pid [[:digit:]]*: ERROR:  unable to read data from frontend$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pgpool\[[[:digit:]]+\]: [-:[:digit:]]{10}[[:space:]][:[:digit:]]{9} pid [[:digit:]]*: ERROR:  md5 authentication failed$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pgpool\[[[:digit:]]+\]: [-:[:digit:]]{10}[[:space:]][:[:digit:]]{9}[[:space:]]pid [[:digit:]]*: WARNING:  PCP process with pid: [[:digit:]]* was terminated by segmentation fault$

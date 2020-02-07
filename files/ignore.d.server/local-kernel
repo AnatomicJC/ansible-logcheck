@@ -39,3 +39,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? IPVS: Creating netns size=[[:digit:]]* id=[[:digit:]]*$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[.[:digit:]]+\] overlayfs: (upperdir|workdir) is in-use by another mount, accessing files from both mounts will result in undefined behavior.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? systemd
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? pgpool\[[[:digit:]]*\]: segfault
