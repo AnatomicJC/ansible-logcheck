@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ zed: eid=[[:digit:]]* class=history_event pool_guid=[[:alnum:]]{18}

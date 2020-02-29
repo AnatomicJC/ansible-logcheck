@@ -2,7 +2,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: [[:alnum:]\.-]+\[[\.[:digit:]]+\]: SASL Plain authentication failed:$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: TLS library problem:
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: improper command pipelining after (AUTH|DATA) from unknown
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: improper command pipelining after HELO from unknown
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: improper command pipelining after (HELO|EHLO) from unknown
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: disconnect from
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/master\[[[:digit:]]+\]: reload
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/postfix-script\[[[:digit:]]+\]: refreshing the Postfix mail system$
