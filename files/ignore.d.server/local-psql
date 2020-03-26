@@ -1,0 +1,4 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ psql[[[:digit:]]+\]:  pg_stat_statements_reset$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ psql[[[:digit:]]+\]: --------------------------$"
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ psql[[[:digit:]]+\]:$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ psql[[[:digit:]]+\]: \([[:digit:]]* row.?\)$
