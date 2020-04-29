@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postgresql_exporter[[[:digit:]]+\]: [/[:digit:]]{10}[[:space:]][:[:digit:]]{8} http: multiple response.WriteHeader calls$
