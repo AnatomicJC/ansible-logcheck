@@ -4,3 +4,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pgpool\[[[:digit:]]+\]: [-:[:digit:]]{10}[[:space:]][:[:digit:]]{9}[[:space:]]pid [[:digit:]]*: WARNING:  PCP process with pid: [[:digit:]]* was terminated by segmentation fault$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pgpool\[[[:digit:]]+\]: #011
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pgpool\[[[:digit:]]+\]: [-:[:digit:]]{10}[[:space:]][:[:digit:]]{9}[[:space:]]pid [[:digit:]]*: FATAL:  failed while reading startup packet$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pgpool\[[[:digit:]]+\]: [-:[:digit:]]{10}[[:space:]][:[:digit:]]{9}[[:space:]]pid [[:digit:]]*: ERROR:  unable to read message kind$
