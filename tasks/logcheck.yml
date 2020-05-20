@@ -9,6 +9,12 @@
     state: directory
     suffix: logcheck
   register: logcheck_tempdir
+  delegate_to: localhost
+  run_once: True
+  vars:
+    ansible_become: False
+  changed_when: false
+  tags: logcheck-copy-custom-rules
 
 - name: Create local archive of logcheck configuration files
   archive:
@@ -17,9 +23,9 @@
     format: gz
   with_items:
     - path: "{{ role_path }}/files/ignore.d.server/"
-      dest: "{{ logcheck_tempdir }}/ignore.tar.gz"
+      dest: "{{ logcheck_tempdir.path }}/ignore.tar.gz"
     - path: "{{ role_path }}/files/violations.ignore.d/"
-      dest: "{{ logcheck_tempdir }}/violations.tar.gz"
+      dest: "{{ logcheck_tempdir.path }}/violations.tar.gz"
   delegate_to: localhost
   run_once: True
   vars:
@@ -32,10 +38,21 @@
     src: "{{ item.src }}"
     dest: "{{ item.dest }}"
   with_items:
-    - src: "{{ logcheck_tempdir }}/ignore.tar.gz"
+    - src: "{{ logcheck_tempdir.path }}/ignore.tar.gz"
       dest: "/etc/logcheck/ignore.d.server/"
-    - src: "{{ logcheck_tempdir }}/violations.tar.gz"
+    - src: "{{ logcheck_tempdir.path }}/violations.tar.gz"
       dest: "/etc/logcheck/violations.ignore.d/"
+  tags: logcheck-copy-custom-rules
+
+- name: Remove local archive of logcheck configuration files
+  file:
+    state: absent
+    path: "{{ logcheck_tempdir.path }}"
+  delegate_to: localhost
+  run_once: True
+  vars:
+    ansible_become: False
+  changed_when: false
   tags: logcheck-copy-custom-rules
 
 - name: Copy host local rules
