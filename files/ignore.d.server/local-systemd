@@ -58,4 +58,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-networkd-wait-online[[[:digit:]]+\]: (ignoring|managing)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-udevd\[[[:digit:]\.]*\]: Could not generate persistent MAC address for
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd[[[:digit:]]+\]: message repeated [[:digit:]]+ times
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-networkd[[[:digit:]]+\]: veth.* Link (UP|DOWN)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-networkd[[[:digit:]]+\]: .* Link (UP|DOWN)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd[[[:digit:]]+\]: Closed REST API socket for snapd user session agent.$

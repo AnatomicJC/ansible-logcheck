@@ -6,3 +6,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pgpool\[[[:digit:]]+\]: [-:[:digit:]]{10}[[:space:]][:[:digit:]]{9}[[:space:]]pid [[:digit:]]*: FATAL:  failed while reading startup packet$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pgpool\[[[:digit:]]+\]: [-:[:digit:]]{10}[[:space:]][:[:digit:]]{9}[[:space:]]pid [[:digit:]]*: ERROR:  unable to read message kind$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pgpool\[[[:digit:]]+\]: [-:[:digit:]]{10}[[:space:]][:[:digit:]]{9}[[:space:]]pid [[:digit:]]*: ERROR:  unable to forward message to frontend$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pgpool\[[[:digit:]]+\]: [-:[:digit:]]{10}[[:space:]][:[:digit:]]{9} pid [[:digit:]]*: FATAL:  unable to read from client$
