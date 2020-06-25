@@ -1,2 +1,3 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sslh\[[[:digit:]]+\]: (ssh:)?connection from .* to .* forwarded from .* to
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sslh\[[[:digit:]]+\]: sprintaddr:getnameinfo: Temporary failure in name resolution$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sslh[[[:digit:]]+\]: ssl:connection from
