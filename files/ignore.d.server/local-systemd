@@ -60,3 +60,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd[[[:digit:]]+\]: message repeated [[:digit:]]+ times
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-networkd[[[:digit:]]+\]: .* Link (UP|DOWN)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd[[[:digit:]]+\]: Closed REST API socket for snapd user session agent.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd[[[:digit:]]+\]: .*\.automount: Got automount request for
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd[[[:digit:]]+\]: (Mounting|Unmounting)
