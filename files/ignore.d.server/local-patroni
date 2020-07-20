@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ patroni[[[:digit:]]+\]: [-[:digit:]]{10} [:,[:digit:]]{12} INFO:
