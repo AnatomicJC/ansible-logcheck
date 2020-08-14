@@ -1,3 +1,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ etcd\[[[:digit:]\.]*\]: [-[:digit:]]{10}[[:space:]][:.[:digit:]]{15}[[:space:]]I
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ etcd\[[[:digit:]\.]*\]: [-[:digit:]]{10}[[:space:]][:.[:digit:]]{15} N \| compactor: (Starting|Finished) auto-compaction at revision
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ etcd\[[[:digit:]\.]*\]: [-[:digit:]]{10}[[:space:]][:.[:digit:]]{15} W | etcdserver: .* took too long \([[:digit:]]{3}\.[[:digit:]]*ms\) to execute
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ etcd.*[[[:digit:]]+\]: start to snapshot
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ etcd.*[[[:digit:]]+\]: saved snapshot
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ etcd.*[[[:digit:]]+\]: compacted raft log at
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ etcd.*[[[:digit:]]+\]: purged file .* successfully$
