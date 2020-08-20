@@ -1,0 +1,3 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ patroni_exporter[[[:digit:]]+\]: .* RequestsDependencyWarning: urllib3 .* or chardet .* doesn.t match a supported version
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ patroni_exporter[[[:digit:]]+\]:   RequestsDependencyWarning
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ patroni_exporter[[[:digit:]]+\]: [.[:digit:]]* - - .*GET /metrics HTTP/1.1
