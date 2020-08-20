@@ -37,6 +37,7 @@
   unarchive:
     src: "{{ item.src }}"
     dest: "{{ item.dest }}"
+    mode: 0644
   with_items:
     - src: "{{ logcheck_tempdir.path }}/ignore.tar.gz"
       dest: "/etc/logcheck/ignore.d.server/"
@@ -59,6 +60,7 @@
   copy:
     dest: "{{ item.dest }}"
     content: "{{ item.content }}"
+    mode: 0644
   with_items:
     - content: "{{ logcheck_server_local_rules }}"
       dest: "/etc/logcheck/ignore.d.server/local-local"
