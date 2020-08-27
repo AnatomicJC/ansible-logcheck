@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: ansible_logcheck
   description: Logcheck Configuration
   author:
     Jean Christophe Vassort
