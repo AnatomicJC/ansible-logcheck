@@ -6,3 +6,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ etcd.*[[[:digit:]]+\]: compacted raft log at
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ etcd.*[[[:digit:]]+\]: purged file .* successfully$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ etcd.*[[[:digit:]]+\]: sync duration of 1.*, expected less than 1s
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ etcd.*[[[:digit:]]+\]: segmented wal file .* is created$
