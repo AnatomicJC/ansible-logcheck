@@ -20,6 +20,7 @@
   archive:
     path: "{{ item.path }}"
     dest: "{{ item.dest }}"
+    mode: "0644"
     format: gz
   with_items:
     - path: "{{ role_path }}/files/ignore.d.server/"
