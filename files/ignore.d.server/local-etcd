@@ -7,3 +7,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ etcd.*[[[:digit:]]+\]: purged file .* successfully$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ etcd.*[[[:digit:]]+\]: sync duration of 1.*, expected less than 1s
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ etcd.*[[[:digit:]]+\]: segmented wal file .* is created$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ etcd.*[[[:digit:]]+\]: /health OK \(status code 200\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ etcd.*[[[:digit:]]+\]: .* E | rafthttp: failed to dial [[:alnum:]]* on stream MsgApp v2 \(EOF\)$

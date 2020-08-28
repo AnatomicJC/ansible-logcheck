@@ -62,3 +62,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd[[[:digit:]]+\]: Closed REST API socket for snapd user session agent.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd[[[:digit:]]+\]: .*\.automount: Got automount request for
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd[[[:digit:]]+\]: (Mounting|Unmounting|Unmounted)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-udevd\[[[:digit:]\.]*\]: Network interface NamePolicy= disabled on kernel command line, ignoring.$

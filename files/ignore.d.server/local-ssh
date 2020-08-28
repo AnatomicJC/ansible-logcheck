@@ -37,3 +37,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Accepted publickey
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: pam_unix\(sshd:session\): session (opened|closed) for user
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Connection closed by (authenticating|invalid) user .*
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sftp-server\[[[:digit:]]+\]: session (opened|closed) for local user .* from
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sftp-server\[[[:digit:]]+\]: sent status No such file
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sftp-server\[[[:digit:]]+\]: open .* flags
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sftp-server\[[[:digit:]]+\]: close .* bytes
