@@ -3,6 +3,7 @@
 ---
 - hosts: "{{ targets }}"
   become: true
+  gather_facts: no
   tasks:
   - name: get logcheck reports list
     find:
@@ -15,9 +16,11 @@
       dest: "/tmp/logcheck/{{ item.path | basename }}"
       flat: yes
     loop: "{{ fetch_list.files }}"
+    when: fetch_list.files | length
 
   - name: Purge remote logcheck reports
     file:
       path: "{{ item.path }}"
       state: absent
     loop: "{{ fetch_list.files }}"
+    when: fetch_list.files | length
