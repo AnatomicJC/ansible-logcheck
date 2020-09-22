@@ -4,6 +4,10 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 MAILTO=root
 
 @reboot         logcheck    if [ -x /usr/sbin/logcheck ]; then nice -n10 /usr/sbin/logcheck -R; fi
+{% if logcheck_file_output %}
+{{ logcheck_cron_expression }}       logcheck    if [ -x /usr/sbin/logcheck ] && [ -x /opt/logcheck-file-output ]; then nice -n10 /opt/logcheck-file-output; fi
+{% else %}
 {{ logcheck_cron_expression }}       logcheck    if [ -x /usr/sbin/logcheck ]; then nice -n10 /usr/sbin/logcheck; fi
+{% endif %}
 
 # EOF

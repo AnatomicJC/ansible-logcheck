@@ -70,6 +70,34 @@
   tags: logcheck-copy-custom-rules
   when: logcheck_server_local_rules or logcheck_violation_local_rules
 
+- name: Create logcheck output directory
+  file:
+    path: /srv/logcheck-output
+    state: directory
+    mode: '0700'
+    owner: "{{ logcheck_user }}"
+    group: "{{ logcheck_group }}"
+  when: logcheck_file_output | bool
+
+- name: Create logcheck-file-output script
+  copy:
+    content: |
+      #!/bin/sh
+      DATE=$(date "+%Y%m%d%H%M%S")
+      OUTPUTFILE=/srv/logcheck-output/$(hostname -s)-${DATE}.gz
+      /usr/sbin/logcheck -o | gzip > ${OUTPUTFILE}
+
+      # delete OUTPUTFILE if empty
+      if [ ! -s ${OUTPUTFILE} ]
+      then
+        rm ${OUTPUTFILE}
+      fi
+    dest: /opt/logcheck-file-output
+    mode: 0700
+    owner: "{{ logcheck_user }}"
+    group: "{{ logcheck_group }}"
+  when: logcheck_file_output | bool
+
 - name: Configure crontab
   template:
     src: "etc/cron.d/logcheck.j2"

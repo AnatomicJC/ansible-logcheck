@@ -1,0 +1,23 @@
+# export ANSIBLE_INVENTORY=path/to/your/inventory
+# ansible-playbook roles/logcheck/misc/fetch_logcheck_reports.yml --extra-vars="targets=all"
+---
+- hosts: "{{ targets }}"
+  become: true
+  tasks:
+  - name: get logcheck reports list
+    find:
+      paths: /srv/logcheck-output
+    register: fetch_list
+  
+  - name: Fetch files
+    fetch:
+      src: "{{ item.path }}"
+      dest: "/tmp/logcheck/{{ item.path | basename }}"
+      flat: yes
+    loop: "{{ fetch_list.files }}"
+
+  - name: Purge remote logcheck reports
+    file:
+      path: "{{ item.path }}"
+      state: absent
+    loop: "{{ fetch_list.files }}"
