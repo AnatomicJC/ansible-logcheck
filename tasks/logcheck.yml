@@ -86,9 +86,10 @@
       DATE=$(date "+%Y%m%d%H%M%S")
       OUTPUTFILE=/srv/logcheck-output/$(hostname -s)-${DATE}.gz
       /usr/sbin/logcheck -o | gzip > ${OUTPUTFILE}
-
+      
       # delete OUTPUTFILE if empty
-      if [ ! -s ${OUTPUTFILE} ]
+      # As it is a gzip file, it is empty if characters number is equal to 20
+      if [ $(<${OUTPUTFILE} wc -c) -eq 20 ]
       then
         rm ${OUTPUTFILE}
       fi
