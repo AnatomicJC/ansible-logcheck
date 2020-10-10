@@ -1,7 +1,7 @@
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:alnum:]]{9}: s=.*SSL$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:alnum:]]{9}: DKIM verification successful$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:alnum:]]{9}: not authenticated$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:alnum:]]{9}: .* not internal$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:alnum:]]{9}: message has signatures from
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:alnum:]]{9}: DKIM-Signature field added
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:alnum:]]{9}: no signature data$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:alnum:]]*: s=.*SSL$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:alnum:]]*: DKIM verification successful$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:alnum:]]*: not authenticated$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:alnum:]]*: .* not internal$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:alnum:]]*: message has signatures from
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:alnum:]]*: DKIM-Signature field added
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:alnum:]]*: no signature data$
