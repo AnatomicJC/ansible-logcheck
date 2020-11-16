@@ -1,1 +1,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ patroni[[[:digit:]]+\]: [-[:digit:]]{10} [:,[:digit:]]{12} INFO:
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ patroni[[[:digit:]]+\]:.* automatic (analyze|vacuum) of table
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ patroni[[[:digit:]]+\]:.*(pages|tuples): [[:digit:]]* removed, [[:digit:]]* remain
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ patroni[[[:digit:]]+\]:.*avg read rate:
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ patroni[[[:digit:]]+\]:.*system usage

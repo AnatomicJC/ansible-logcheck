@@ -9,3 +9,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ etcd.*[[[:digit:]]+\]: segmented wal file .* is created$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ etcd.*[[[:digit:]]+\]: /health OK \(status code 200\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ etcd.*[[[:digit:]]+\]: .* E | rafthttp: failed to dial [[:alnum:]]* on stream MsgApp v2 \(EOF\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (bash|etcd.*)\[[[:digit:]]+\]: raft[ /[:digit:]]{10} [:[:digit:]]{8} INFO
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (bash|etcd.*)\[[[:digit:]]+\]: WARNING: [/[:digit:]]{10} [:[:digit:]]{8} grpc: Server.processUnaryRPC failed to write status: connection error: desc = "transport is closing"$

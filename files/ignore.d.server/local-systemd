@@ -63,3 +63,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd[[[:digit:]]+\]: .*\.automount: Got automount request for
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd[[[:digit:]]+\]: (Mounting|Unmounting|Unmounted)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-udevd\[[[:digit:]\.]*\]: Network interface NamePolicy= disabled on kernel command line, ignoring.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: kubepods-burstable-pod

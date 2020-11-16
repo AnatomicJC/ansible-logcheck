@@ -1,0 +1,2 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vip-watcher[[[:digit:]]+\]: It seems VIP has moved, delete the arp entry$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vip-watcher[[[:digit:]]+\]: message repeated 16 times: \[ It seems VIP has moved, delete the arp entry\]$

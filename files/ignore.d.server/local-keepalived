@@ -1,3 +1,10 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Keepalived_vrrp\[[[:digit:]\.]*\]: VRRP_Instance\(haproxy-vip\) Dropping received VRRP packet...
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Keepalived_vrrp\[[[:digit:]\.]*\]: bogus VRRP packet received on
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Keepalived_vrrp\[[[:digit:]\.]*\]: \(haproxy-vip\): ip address associated with VRID .* not present in MASTER advert
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Keepalived_vrrp\[[[:digit:]]+\]: VRRP_Script.* (succeeded|timed out)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Keepalived_vrrp\[[[:digit:]]+\]: VRRP_Instance\(VI_1\) Changing effective priority
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Keepalived_vrrp\[[[:digit:]]+\]: VRRP_Instance\(VI_1\) forcing a new MASTER election
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Keepalived_vrrp\[[[:digit:]]+\]: VRRP_Instance\(VI_1\) Transition to MASTER STATE
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Keepalived_vrrp\[[[:digit:]]+\]: VRRP_Instance\(VI_1\) Entering MASTER STATE
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Keepalived_vrrp\[[[:digit:]]+\]: VRRP_Instance\(VI_1\) Received advert with lower priority
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Keepalived_vrrp\[[[:digit:]]+\]: /usr/libexec/keepalived/haproxy_check.sh exited due to signal 15
