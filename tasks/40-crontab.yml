@@ -1,0 +1,8 @@
+---
+- name: Configure crontab
+  template:
+    src: "etc/cron.d/logcheck.j2"
+    dest: "/etc/cron.d/logcheck"
+    owner: "root"
+    group: "root"
+    mode: "0644"

@@ -1,0 +1,23 @@
+---
+- block:
+  - name: Copy logcheck-es-push script
+    copy:
+      src: usr/local/bin/logcheck-es-push
+      dest: /usr/local/bin/logcheck-es-push
+      owner: "{{ logcheck_user }}"
+      group: "{{ logcheck_group }}"
+      mode: 0755
+
+  - name: Copy logcheck-es-push configuration file
+    copy:
+      content: |
+        {
+          "uri": "{{ logcheck_es_param.uri }}",
+          "user": "{{ logcheck_es_param.user }}",
+          "password": "{{ logcheck_es_param.password }}"
+        }
+      dest: /etc/logcheck/logcheck-es-push.json
+      owner: "{{ logcheck_user }}"
+      group: "{{ logcheck_group }}"
+      mode: 0644
+  when: logcheck_es_push

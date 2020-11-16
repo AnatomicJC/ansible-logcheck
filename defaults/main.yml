@@ -2,6 +2,12 @@
 logcheck_enabled: no
 logcheck_cron_expression: 2 * * * *
 logcheck_file_output: no
+logcheck_es_push: no
+logcheck_es_param:
+  uri: https://es-server:9200
+  user: user
+  password: password
+
 logcheck_user: logcheck
 logcheck_group: logcheck
 

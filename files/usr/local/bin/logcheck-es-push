@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import re
 import datetime
 import gzip
@@ -11,14 +12,15 @@ class logcheck2ES:
   def __init__(self):
     self.regexp = "(^\w{3} [ :\d]{11}) ([._\w-]+) ([._\w-]*)\[([\d]+)\]: (.*)"
     self.data = []
-    with open('es-credentials.json') as handle:
+    with open('/etc/logcheck/logcheck-es-push.json') as handle:
       self.es = json.loads(handle.read())
 
   def send(self, filename):
+    index = None
     with gzip.open(filename) as f:
       for line in f.readlines():
-        try:
-          z = re.search(self.regexp, line.decode("utf-8"))
+        z = re.search(self.regexp, line.decode("utf-8"))
+        if z is not None:
           doc = json.dumps({
               'timestamp': datetime.datetime.strptime('{} {}'.format(datetime.datetime.now().year, z.group(1)), '%Y %b %d %H:%M:%S').strftime('%Y-%m-%dT%H:%M:%S'),
               'hostname': z.group(2),
@@ -31,29 +33,28 @@ class logcheck2ES:
           self.data.append(doc)
           index = datetime.datetime.strptime('{} {}'.format(datetime.datetime.now().year, z.group(1)), '%Y %b %d %H:%M:%S').strftime('logcheck-%Y.%m.%d')
     
-        except AttributeError:
-          pass
-    
-    # Bulk request must be terminated by a new line
-    self.data.append('\n')
-    
-    try:
-      r = post(
-        '{}/{}/_bulk/'.format(self.es['uri'], index),
-        data='\n'.join(self.data),
-        auth=(self.es['user'], self.es['password']),
-        headers={'content-type': 'application/json'}
-      )
-    except ConnectionError as e:
-      print(e)
-      sys.exit(1)
-    
-    if r.ok:
-      remove(filename)
-    else:
-      print("Return code: {}".format(r.status_code))
-      print("Msg: {}".format(r.text))
-      sys.exit(1)
+    if index is not None:
+      # Bulk request must be terminated by a new line
+      self.data.append('\n')
+      
+      #51 * * * *       logcheck    if [ -x /usr/sbin/logcheck ] && [ -x /opt/logcheck-file-output ]; then nice -n10 /opt/logcheck-file-output 2>&1 | grep -v RequestsDependencyWarning;
+      try:
+        r = post(
+          '{}/{}/_bulk/'.format(self.es['uri'], index),
+          data='\n'.join(self.data),
+          auth=(self.es['user'], self.es['password']),
+          headers={'content-type': 'application/json'}
+        )
+      except ConnectionError as e:
+        print(e)
+        sys.exit(1)
+      
+      if r.ok:
+        remove(filename)
+      else:
+        print("Return code: {}".format(r.status_code))
+        print("Msg: {}".format(r.text))
+        sys.exit(1)
 
 if __name__ == "__main__":
   if len(sys.argv) != 2:

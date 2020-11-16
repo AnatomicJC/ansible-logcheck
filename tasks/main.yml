@@ -1,3 +1,7 @@
 ---
-- import_tasks: logcheck.yml
+- block:
+  - import_tasks: 10-setup.yml
+  - import_tasks: 20-configure-file-output.yml
+  - import_tasks: 30-es-push.yml
+  - import_tasks: 40-crontab.yml
   when: logcheck_enabled|bool

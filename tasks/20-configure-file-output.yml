@@ -1,0 +1,35 @@
+---
+- block:
+  - name: Create logcheck output directory
+    file:
+      path: /srv/logcheck-output
+      state: directory
+      mode: '0700'
+      owner: "{{ logcheck_user }}"
+      group: "{{ logcheck_group }}"
+
+  - name: Create logcheck-file-output script
+    copy:
+      content: |
+        #!/bin/sh
+        DATE=$(date "+%Y%m%d%H%M%S")
+        OUTPUTFILE=/srv/logcheck-output/$(hostname -s)-${DATE}.gz
+        /usr/sbin/logcheck -o | gzip > ${OUTPUTFILE}
+
+        # delete OUTPUTFILE if empty
+        # As it is a gzip file, it is empty if characters number is equal to 20
+        if [ $(<${OUTPUTFILE} wc -c) -eq 20 ]
+        then
+          rm ${OUTPUTFILE}
+        fi
+        {% if logcheck_es_push %}
+        for file in $(ls /srv/logcheck-output/)
+        do
+          logcheck-es-push /srv/logcheck-output/$file
+        done
+        {% endif %}
+      dest: /opt/logcheck-file-output
+      mode: 0700
+      owner: "{{ logcheck_user }}"
+      group: "{{ logcheck_group }}"
+  when: logcheck_file_output or logcheck_es_push
