@@ -3,4 +3,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ patroni[[[:digit:]]+\]:.*(pages|tuples): [[:digit:]]* removed, [[:digit:]]* remain
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ patroni[[[:digit:]]+\]:.*avg read rate:
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ patroni[[[:digit:]]+\]:.*system usage
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ patroni[[[:digit:]]+\]:.*buffer usage: [[:digit:]]* hits, [[:digit:]]* misses, [[:digit:]]* dirtied
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ patroni[[[:digit:]]+\]: [-[:digit:]]{10} [:[:digit:]]{8} CET \[[[:digit:]]*\].*could not receive data from client: Connection reset by peer
