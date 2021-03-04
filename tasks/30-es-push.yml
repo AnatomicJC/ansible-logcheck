@@ -1,8 +1,8 @@
 ---
 - block:
   - name: Copy logcheck-es-push script
-    copy:
-      src: usr/local/bin/logcheck-es-push
+    template:
+      src: usr/local/bin/logcheck-es-push.j2
       dest: /usr/local/bin/logcheck-es-push
       owner: "{{ logcheck_user }}"
       group: "{{ logcheck_group }}"

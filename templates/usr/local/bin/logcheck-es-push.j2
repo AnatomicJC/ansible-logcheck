@@ -42,6 +42,9 @@ class logcheck2ES:
         r = post(
           '{}/{}/_bulk/'.format(self.es['uri'], index),
           data='\n'.join(self.data),
+{% if not logcheck_es_ssl_verify %}
+          verify=False,
+{% endif %}
           auth=(self.es['user'], self.es['password']),
           headers={'content-type': 'application/json'}
         )
