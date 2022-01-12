@@ -1,1 +1,2 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ containerd\[[[:digit:]\.]*\]: .* level=info
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ containerd\[[[:digit:]\.]*\]: .* file already closed
