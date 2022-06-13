@@ -31,6 +31,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Did not receive identification string from ([0-9]{1,3}\.){3}[0-9]{1,3} port [[:digit:]]*$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Connection (closed|reset) by ([0-9]{1,3}\.){3}[0-9]{1,3} port [[:digit:]]* \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Unable to negotiate with ([0-9]{1,3}\.){3}[0-9]{1,3} port [[:digit:]]*: no matching (host key type|cipher) found
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Unable to negotiate with [:[:alnum:]]* port [[:digit:]]*: no matching (host key type|cipher) found
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: maximum authentication attempts exceeded for
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: kex protocol error
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: pam_sss\(sshd:auth\): authentication success;
