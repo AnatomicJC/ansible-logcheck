@@ -12,3 +12,5 @@ cleanup: failed to unmount IPC
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dockerd\[[[:digit:]]+\]: time=".*" level=error msg="Failed to start container [[:alnum:]]*: network [[:alnum:]]* not found"$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dockerd\[[[:digit:]]+\]: time=".*" level=error msg="Error removing volumes:\\nget [[:alnum:]]*: no such volume"$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dockerd\[[[:digit:]]+\]: time=".*" level=error msg="stream copy error: reading from a closed fifo"$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ containerd\[[[:digit:]]*\]: time=".*" level=warning msg="cleaning up after shim disconnected"
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ docker-compose\[[[:digit:]]*\]: Creating
